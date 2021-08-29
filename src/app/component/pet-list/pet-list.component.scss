@@ -1,0 +1,14 @@
+.pet-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    border: 4px dashed red;
+    padding: 0;
+
+    &__element {
+        flex-basis: 32%;
+        margin: 10px 0.5%;
+        padding: 0;
+    }
+}

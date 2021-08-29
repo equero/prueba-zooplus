@@ -1,0 +1,8 @@
+<ul class="pet-list" *ngIf="petList.length > 0">
+    <li class="pet-list__element" *ngFor="let pet of petList">
+        <pet-card [pet]="pet"></pet-card>
+    </li>
+    <li class="pet-list__element" *ngFor="let pet of petList">
+        <pet-card [pet]="pet"></pet-card>
+    </li>
+</ul>

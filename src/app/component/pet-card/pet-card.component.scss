@@ -1,0 +1,16 @@
+.pet-card {
+    &__header {
+        height: 130px;
+        background: linear-gradient(135deg, #43cea2, #185a9d);
+        text-align: center;
+        border-radius: 15px 15px 0 0;
+        &__image {
+            height: 130px;
+        }
+    }
+    &__content {
+        height: 130px;
+        border-radius: 0 0 15px 15px;
+        background: #fff;
+    }
+}
