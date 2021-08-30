@@ -41,16 +41,16 @@ export class ApiService {
     )
   }
 
-  getPetTypes(): Observable<PetType[]> {
-    return this.http.get<PetType[]>(`${this.petTypeUrl}`)
+  getPetTypes(): Observable<PetType> {
+    return this.http.get<PetType>(`${this.petTypeUrl}`)
     .pipe(
       retry(1),
       catchError(this.httpError)
     )
   }
 
-  getBreed(): Observable<PetBreed[]> {
-    return this.http.get<PetBreed[]>(`${this.breedUrl}`)
+  getBreed(petType: string): Observable<PetBreed> {
+    return this.http.get<PetBreed>(`${this.breedUrl}/${petType}`)
     .pipe(
       retry(1),
       catchError(this.httpError)

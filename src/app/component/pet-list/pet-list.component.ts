@@ -9,7 +9,7 @@ import { ApiService } from 'src/app/service/api.service';
 })
 export class PetListComponent implements OnInit {
   
-  public petList: Pet[]; 
+  public petList: Pet[];
 
   constructor(private apiService: ApiService) { 
     this.petList = [];
@@ -18,5 +18,5 @@ export class PetListComponent implements OnInit {
   ngOnInit(): void {
     this.apiService.getPets().subscribe((data: Pet[]) => { this.petList = data });
   }
-
+  
 }

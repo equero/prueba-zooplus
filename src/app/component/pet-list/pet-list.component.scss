@@ -2,13 +2,31 @@
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    width: 50%;
-    border: 4px dashed red;
     padding: 0;
 
     &__element {
-        flex-basis: 32%;
+        flex-basis: 24%;
         margin: 10px 0.5%;
         padding: 0;
+        @media only screen and (max-width: 600px) {
+            flex-basis: 99%;
+        }
+    }
+}
+
+.button {
+    font-size: 1.4em;
+    justify-content: space-around;
+    box-sizing: border-box;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+    cursor: pointer;
+    color: white;
+    border: 0;
+    width: 200px;
+    height: 70px;
+
+    &:hover {
+        box-shadow: 0 0 11px rgba(33,33,33,.2);
     }
 }
