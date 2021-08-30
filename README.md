@@ -41,3 +41,7 @@ Just basic MVP design with BEM block, easy and simple
 Despite the fact that there is very little content completed in the test, for me it was a very easy and with the right amount of time I would have completed all the technical debts without any problems, I have done it several times in the past, and I would have completed it without any problems. Maybe I'm not the fastest but I'm not bad at it.
 
 Also working as an architect the last few months and doing only management work, may have taken its effect on me as a developer, who knows?
+
+## Any difficulties in the test?
+
+I have had big problems to perform the test because the breed and petType requests are not a list of key value objects, it is an object with dynamic keys, where I do not know how much I will get .... I do not know if it is a bug or if this is done on purpose, or if it is a system of labels that returns the translation in a specific language.
